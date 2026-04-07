@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World!</h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata Ergian Syah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 900px;
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #e0f2fe;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 15px;
+            border: 2px solid rgba(96,165,250,0.7);
+        }
+
+        table {
+            width: 100%;
+            color: #e0f2fe;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        .label {
+            color: #7dd3fc;
+            width: 140px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #93c5fd;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Background animasi bubble */
+        .bubble {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .bubble:nth-child(1) { top: 10%; left: 20%; }
+        .bubble:nth-child(2) { top: 60%; left: 70%; }
+        .bubble:nth-child(3) { top: 40%; left: 10%; }
+
+        @keyframes float {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>BIODATA DIRI</h1>
+    </div>
+
+    <div class="content">
+
+        <!-- FOTO -->
+        <div class="card photo">
+            <img src="foto.jpg" alt="Foto Ergian Syah">
+        </div>
+
+        <!-- BIODATA -->
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>: Ergian Syah</td>
+                </tr>
+                <tr>
+                    <td class="label">TTL</td>
+                    <td>: Tasikmalaya, 23 Maret 2008</td>
+                </tr>
+                <tr>
+                    <td class="label">Alamat</td>
+                    <td>: Kp. Cikatulampa</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ds. Padawaras</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Kec. Cipatujah</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Kab. Tasikmalaya</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Jawa Barat</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 - Ergian Syah
+    </div>
+
+</div>
+
+</body>
+</html>
